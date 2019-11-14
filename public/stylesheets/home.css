@@ -16,15 +16,17 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 8vh;
+	min-height: 10vh;
 	background-color: #e50202;
 	z-index: 20;
+	box-shadow: 0px 0px 5px 0px black;
 }
 .logo {
-	color: black;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 20px;
+	width: 150px;
+	height: 8vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("../images/winTodayLogo.jpg");
 }
 .social {
 	display: flex;
@@ -54,4 +56,15 @@ nav {
 	font-weight: bold;
 	font-size: 14px;
 	z-index: 20;
+}
+.nav-links a:hover {
+	color: black;
+}
+
+#jumbotron {
+	top: 10vh;
+	height: 90vh;
+	background-size: cover;
+	position: relative;
+	background-image: url("https://images.unsplash.com/photo-1502290657503-a6a8708fb99d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
 }
