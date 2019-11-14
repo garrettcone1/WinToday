@@ -1,0 +1,57 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* NAVBAR AND SIDEBAR STYLES */
+nav {
+	position: fixed;
+  	top: 0;
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #e50202;
+	z-index: 20;
+}
+.logo {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+.social {
+	display: flex;
+	justify-content: right;
+}
+.social li {
+	list-style: none;
+}
+.social a {
+	justify-content: space-around;
+	color: black;
+	letter-spacing: 5px;
+}
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+.nav-links li {
+	list-style: none;
+}
+.nav-links a {
+	display: inline-block;
+	color: rgb(226, 226, 226);
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 14px;
+	z-index: 20;
+}
