@@ -12,5 +12,5 @@ app.set("view engine", "ejs");
 app.use(homePageRoute);
 
 app.listen(process.env.PORT || 3000, process.env.IP, () => {
-console.log("Server started...");
+    console.log("Server started...");
 });

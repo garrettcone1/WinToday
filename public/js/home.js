@@ -1,3 +1,4 @@
+
 const navSlider = () => {
 	const mobileMenu = document.querySelector(".mobile-menu");
 	const nav = document.querySelector(".navbar");
@@ -24,10 +25,8 @@ var TIMEOUT = 6000;
 var interval = setInterval(handleNext, TIMEOUT);
  
 function handleNext() {
- 
   var radios = $("input[class*='slide-radio']");
   var activeRadio = $('input[class*="slide-radio"]:checked');
- 
   var currentIndex = activeRadio.index();
   var radiosLength = radios.length;
  
