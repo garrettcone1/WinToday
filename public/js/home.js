@@ -38,3 +38,10 @@ function handleNext() {
     activeRadio.next('input[class*="slide-radio"]') .attr('checked', true);
   }
 }
+
+$(".ui.grid>.ui.stackable.three.column.centered.row>.column").hover(
+  function(){
+  		$(".info", this).css("display", "block");
+	}, function(){
+  		$(".info", this).css("display", "none");
+});
