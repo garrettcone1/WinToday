@@ -368,9 +368,34 @@ nav {
 	text-align: center;
 	letter-spacing: 25px;
 	text-transform: uppercase;
-	/* vertical-align: middle; */
 }
 
+.ui.grid>.ui.stackable.three.column.centered.row {
+	background-color: black;
+	height: 500px;
+}
+.ui.grid>.ui.stackable.three.column.centered.row>.column {
+	margin-top: 40px;
+}
+.img1 {
+	height: 400px;
+	background-size: cover;
+ 	background-repeat: no-repeat;
+	background-image: url("../images/Teeshirt1.jpg");
+}
+.img2 {
+	height: 400px;
+	background-size: cover;
+ 	background-repeat: no-repeat;
+	background-image: url("../images/sweatshirt.jpg");
+}
+.img3 {
+	height: 400px;
+	background-size: cover;
+ 	background-repeat: no-repeat;
+	background-image: url("../images/Teeshirt1.jpg");
+}
+	
 @media screen and (max-width: 972px) {
 	.navbar {
 		width: 60%;
