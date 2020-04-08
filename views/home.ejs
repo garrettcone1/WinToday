@@ -1,146 +1,105 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>WIN TODAY</title>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
+<% include ./partials/header %>
+    <div class="css-slider-wrapper">
+        <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+        <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+        <input type="radio" name="slider" class="slide-radio3" id="slider_3">
         
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-		
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    </head>
-    <body>
-        <nav>
-			<div class="logo"></div>
-            <div class="navbar">
-                <a class="nav-link leftToRight" href="#">Tees</a>
-                <a class="nav-link leftToRight" href="#">Hoodies</a>
-                <a class="nav-link leftToRight" href="#">Beanies</a>
-                <a class="nav-link leftToRight" href="#">Stickers</a>
-                <a class="nav-link leftToRight" href="#">About Us</a>
+        <!-- Slider Pagination -->
+        <div class="slider-pagination">
+            <label for="slider_1" class="page1"></label>
+            <label for="slider_2" class="page2"></label>
+            <label for="slider_3" class="page3"></label>
+        </div>
+        
+        <!-- Slider #1 -->
+        <div class="slider slide-1">
+            <div class="slider-content">
+                <h2>YESTERDAY IS THE PAST</h2>
+                
             </div>
-            <div class="social">
-                <ul>
-                    <li>
+            <div class="number-pagination">
+                <span>01</span>
+            </div>
+        </div>
+        
+        <!-- Slider #2 -->
+        <div class="slider slide-2">
+                <div class="slider-content">
+                <h2>TOMORROW IS THE FUTURE</h2>
+            </div>
+            <div class="number-pagination">
+                <span>02</span>
+            </div>
+        </div>
+        
+        <!-- Slider #3 -->
+        <div class="slider slide-3">
+            <div class="slider-content">
+                <h2>WIN TODAY</h2>
+            </div>
+            <div class="number-pagination">
+                <span>03</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-title">
+        <p class="passion">Passion Led Us Here</p>
+    </div>
+    
+    <div class="ui grid">
+        <div class="ui stackable three column centered row">
+            <div class="sixteen wide mobile five wide computer column">
+                <div class="img1"></div>
+                <p class="info">Shop Tees</p>
+                <a href="/tees">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="sixteen wide mobile five wide computer column">
+                <div class="img2"></div>
+                <p class="info">Shop Hoodies</p>
+                <a href="#">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="sixteen wide mobile five wide computer column">
+                <div class="img3"></div>
+                <div class="info">
+                    <p>Shop Tees</p>
+                </div>
+                <a href="#">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui equal width center aligned padded grid parallax">
+        <div class="row">
+            <div class="column">
+                <div class="parallaxImg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui equal width center aligned padded grid split">
+        <div class="row">
+            <div class="column">
+                <div class="followLogo"></div>
+            </div>
+            <div class="column">
+                <div class="follow-content">
+                    <p class="flw-title">Follow Us</h2>
+                    <p class="flw-text">Keep up to date with new items and inspiration</h4>
+                    <div class="follow-button">
+                        <span>Follow</span>
                         <a href="https://www.facebook.com" target="_blank"><i class="facebook f icon"></i></a>
                         <a href="https://www.instagram.com" target="_blank"><i class="instagram icon"></i></a>
                         <a href="https://www.twitter.com" target="_blank"><i class="twitter icon"></i></a>
-                    </li>
-                </ul>
-            </div>
-			<div class="mobile-menu">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
-			</div>
-        </nav>
-        
-        <div class="css-slider-wrapper">
-            <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
-            <input type="radio" name="slider" class="slide-radio2" id="slider_2">
-            <input type="radio" name="slider" class="slide-radio3" id="slider_3">
-           
-            <!-- Slider Pagination -->
-            <div class="slider-pagination">
-              <label for="slider_1" class="page1"></label>
-              <label for="slider_2" class="page2"></label>
-              <label for="slider_3" class="page3"></label>
-            </div>
-           
-            <!-- Slider #1 -->
-            <div class="slider slide-1">
-                <div class="slider-content">
-                    <h2>YESTERDAY IS THE PAST</h2>
-                    
-                </div>
-                <div class="number-pagination">
-                    <span>01</span>
-                </div>
-            </div>
-           
-            <!-- Slider #2 -->
-            <div class="slider slide-2">
-                 <div class="slider-content">
-                    <h2>TOMORROW IS THE FUTURE</h2>
-                </div>
-                <div class="number-pagination">
-                    <span>02</span>
-                </div>
-            </div>
-           
-            <!-- Slider #3 -->
-            <div class="slider slide-3">
-                <div class="slider-content">
-                    <h2>WIN TODAY</h2>
-                </div>
-                <div class="number-pagination">
-                    <span>03</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="header-title">
-            <p class="passion">Passion Led Us Here</p>
-        </div>
-        
-        <div class="ui grid">
-            <div class="ui stackable three column centered row">
-                <div class="sixteen wide mobile five wide computer column">
-                    <div class="img1"></div>
-                    <p class="info">Shop Tees</p>
-                    <a href="#">
-                        <div class="overlay"></div>
-                    </a>
-                </div>
-                <div class="sixteen wide mobile five wide computer column">
-                    <div class="img2"></div>
-                    <p class="info">Shop Hoodies</p>
-                    <a href="#">
-                        <div class="overlay"></div>
-                    </a>
-                </div>
-                <div class="sixteen wide mobile five wide computer column">
-                    <div class="img3"></div>
-                    <div class="info">
-                        <p>Shop Tees</p>
-                    </div>
-                    <a href="#">
-                        <div class="overlay"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="ui equal width center aligned padded grid parallax">
-            <div class="row">
-                <div class="column">
-                    <div class="paraImg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="ui equal width center aligned padded grid split">
-            <div class="row">
-                <div class="column">
-                    <div class="followLogo"></div>
-                </div>
-                <div class="column">
-                    <div class="follow-content">
-                        <p class="flw-title">Follow Us</h2>
-                        <p class="flw-text">Keep up to date with new items and inspiration</h4>
-                        <div class="follow-button">
-                            <span>Follow</span>
-                            <a href="https://www.facebook.com" target="_blank"><i class="facebook f icon"></i></a>
-                            <a href="https://www.instagram.com" target="_blank"><i class="instagram icon"></i></a>
-                            <a href="https://www.twitter.com" target="_blank"><i class="twitter icon"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <script type="text/javascript" src="/js/home.js"></script>
-    </body>
-</html>
+    </div>
+<% include ./partials/footer %>

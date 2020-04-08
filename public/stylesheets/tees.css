@@ -1,0 +1,29 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.tees-header {
+    width: 100%;
+    height: 250px;
+    margin-top: 10vh;
+    background-color: #fff;
+}
+.tees-header p {
+    color: black;
+    text-align: center;
+}
+.tees-header>.title {
+	font-size: 23px;
+	letter-spacing: 15px;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+.tees-header>.title-p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 0px 20%;
+}

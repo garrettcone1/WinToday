@@ -364,7 +364,8 @@ nav {
 
 .ui.grid>.ui.stackable.three.column.centered.row {
 	background-color: black;
-	height: 500px;
+	/* height: 500px; */
+	height: 70vh;
 }
 .ui.grid>.ui.stackable.three.column.centered.row>.column {
 	margin-top: 40px;
@@ -382,17 +383,13 @@ nav {
 }
 .info {
 	color: white;
-	/* width: 200px; */
-	font-size: 30px;
-	font-family: "Georgia Pro", serif;
+	font-size: 25px;
+	/* font-family: "Georgia Pro", serif; */
   display: none;
   position: absolute;
-	/* top: 200px; */
-	
+	letter-spacing: 3px;
 	z-index: 101;
-	/* text-align: center; */
-	/* margin-left: 125px; */
-	/* justify-content: center; */
+	
 	text-transform: uppercase;
 }
 
@@ -425,13 +422,13 @@ nav {
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.paraImg {
+.parallaxImg {
 	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 	background-image: url("https://images.unsplash.com/photo-1500757045557-7864506cf31c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 }
 .ui.equal.width.center.aligned.padded.grid.split>.row {
 	padding-top: 0px;
@@ -480,7 +477,10 @@ nav {
 		margin-right: 25px;
 	}
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 811px) {
+
+} */
+@media screen and (max-width: 811px) {
 	.navbar {
 		position: absolute;
 		font-size: 25px;
@@ -516,9 +516,14 @@ nav {
 		justify-content: center;
 	}
 }
+@media screen and (min-width: 811px) {
+	.parallaxImg {
+		background-attachment: fixed;
+	}
+}
 @media only screen and (max-width: 768px) {
 	.slider h2 {
-	  font-size: 20px;
+	  font-size: 35px;
 	}
 	.slider h4 {
 	  font-size: 16px;
@@ -544,7 +549,12 @@ nav {
 	.slider .follow-btn:after {
 	  top: 15px;
 	}
-  }
+
+	.passion {
+		font-size: 25px;
+		letter-spacing: 10px;
+	}
+}
 .nav-active {
 	transform: translateX(0%);
 	display: flex;
