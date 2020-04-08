@@ -72,7 +72,7 @@ nav {
 }
 .leftToRight::before {
 	width: 0%;
-	/* bottom: 10px; */
+	bottom: 10px;
 }
 .leftToRight:hover::before {
 	width: 100%;
@@ -174,13 +174,11 @@ nav {
 	-webkit-transform: translateX(500px);
 	transform: translateX(500px);
 }
-   
-/* .slide-1 img {
-	right: 0;
-} */
+
 .follow-button {
 	width: 200px;
-	height: 60px;
+	height: 40px;
+	left: 240px;
 	background-color: #e50202;
 	border-radius: 30px;
 	display: flex;
@@ -188,22 +186,22 @@ nav {
 	justify-content: center;
 	overflow: hidden;
 	position: relative;
-	cursor: pointer;
-	transition: .3s linear;
+	transition: .2s linear;
 }
 .follow-button:hover {
 	transform: scale(1.1);
 }
 .follow-button span {
+	font-size: 16px;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: #2D3436;
 	color: #fff;
 	text-align: center;
-	line-height: 80px;
+	line-height: 40px;
 	z-index: 999;
-	transition: .6s linear;
+	transition: .2s linear;
 	border-radius: 30px;
 }
 .follow-button:hover span {
@@ -212,28 +210,28 @@ nav {
 }
 .follow-button a {
 	flex: 1;
-	font-size: 26px;
+	font-size: 18px;
 	color: #fff;
 	text-align: center;
 	transform: translateX(-100%);
 	opacity: 0;
-	transition: .3s linear;
+	transition: .2s linear;
 }
 .follow-button:hover a {
 	opacity: 1;
 	transform: translateX(0);
 }
 .follow-button a:nth-of-type(1) {
-	transition-delay: 1s;
-}
-.follow-button a:nth-of-type(2) {
 	transition-delay: 0.8s;
 }
-.follow-button a:nth-of-type(3) {
+.follow-button a:nth-of-type(2) {
 	transition-delay: 0.6s;
 }
-.follow-button a:nth-of-type(4) {
+.follow-button a:nth-of-type(3) {
 	transition-delay: 0.4s;
+}
+.follow-button a:nth-of-type(4) {
+	transition-delay: 0.2s;
 }
 
 .follow-btn {
@@ -274,12 +272,6 @@ nav {
 	transition: transform 800ms, opacity 800ms;
 	-webkit-transition-delay: 1s; /* Safari */
 	transition-delay: 1s;
-}
-.slider h4 {
-	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
-	transition: transform 800ms, opacity 800ms;
-	-webkit-transition-delay: 1.4s; /* Safari */
-	transition-delay: 1.4s;
 }
 
   /* Number Pagination */
@@ -357,7 +349,7 @@ nav {
 	width: 100%;
 	height: 250px;
 	left: 0;
-	margin-top: 50px;
+	margin-top: 40px;
 	background-color: #fff;
 }
 .passion {
@@ -377,7 +369,7 @@ nav {
 .ui.grid>.ui.stackable.three.column.centered.row>.column {
 	margin-top: 40px;
 }
-.ui.grid>.ui.stackable.three.column.centered.row>.column:hover>.overlay {
+.ui.grid>.ui.stackable.three.column.centered.row>.column:hover>a>.overlay {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -390,25 +382,25 @@ nav {
 }
 .info {
 	color: white;
-	width: 200px;
-	font-size: 20px;
+	/* width: 200px; */
+	font-size: 30px;
+	font-family: "Georgia Pro", serif;
   display: none;
   position: absolute;
-  top: 200px;
+	/* top: 200px; */
+	
 	z-index: 101;
-	text-align: center;
+	/* text-align: center; */
 	/* margin-left: 125px; */
-	justify-content: center;
-}
-.info a {
-	color: white;
+	/* justify-content: center; */
 	text-transform: uppercase;
 }
+
 .img1 {
 	height: 400px;
 	background-size: cover;
  	background-repeat: no-repeat;
-	background-image: url("../images/Teeshirt1.jpg");
+	background-image: url("../images/teeshirt.jpg");
 }
 .img2 {
 	height: 400px;
@@ -420,9 +412,61 @@ nav {
 	height: 400px;
 	background-size: cover;
  	background-repeat: no-repeat;
-	background-image: url("../images/Teeshirt1.jpg");
+	background-image: url("../images/teeshirt.jpg");
 }
+
+.parallax {
+	height: 500px;
+}
+.ui.equal.width.center.aligned.padded.grid.parallax>.row {
+	padding-bottom: 0px;
+}
+.ui.equal.width.center.aligned.padded.grid.parallax>.row>.column {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.paraImg {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-image: url("https://images.unsplash.com/photo-1500757045557-7864506cf31c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+	background-attachment: fixed;
+}
+.ui.equal.width.center.aligned.padded.grid.split>.row {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.ui.equal.width.center.aligned.padded.grid.split>.row>.column:first-of-type {
+	height: 500px;
+	background-color: black;
 	
+}
+.ui.equal.width.center.aligned.padded.grid.split>.row>.column:first-of-type>.followLogo {
+	width: 350px;
+	height: 150px;
+	margin-top: 175px;
+	margin-left: 185px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("../images/winTodayLogo.jpg");
+}
+.ui.equal.width.center.aligned.padded.grid.split>.row>.column:nth-of-type(2)>.follow-content {
+	text-align: center;
+	height: 100%;
+}
+.flw-title {
+	font-size: 35px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	padding-top: 150px;
+}
+.flw-text {
+	font-size: 15px;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+
 @media screen and (max-width: 972px) {
 	.navbar {
 		width: 60%;
