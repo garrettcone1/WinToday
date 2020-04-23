@@ -176,9 +176,16 @@ nav {
 }
 
 .follow-button {
+	/* display: block; */
+	margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+	/* width: 50%; */
+	/* height: 50%; */
+	
 	width: 200px;
 	height: 40px;
-	left: 240px;
+	/* left: 240px; */
 	background-color: #e50202;
 	border-radius: 30px;
 	display: flex;
@@ -186,10 +193,6 @@ nav {
 	justify-content: center;
 	overflow: hidden;
 	position: relative;
-	transition: .2s linear;
-}
-.follow-button:hover {
-	transform: scale(1.1);
 }
 .follow-button span {
 	font-size: 16px;
@@ -201,71 +204,15 @@ nav {
 	text-align: center;
 	line-height: 40px;
 	z-index: 999;
-	transition: .2s linear;
 	border-radius: 30px;
-}
-.follow-button:hover span {
-	transform: translateX(-100%);
-	transition-delay: .3s;
 }
 .follow-button a {
 	flex: 1;
 	font-size: 18px;
 	color: #fff;
 	text-align: center;
-	transform: translateX(-100%);
-	opacity: 0;
-	transition: .2s linear;
-}
-.follow-button:hover a {
-	opacity: 1;
-	transform: translateX(0);
-}
-.follow-button a:nth-of-type(1) {
-	transition-delay: 0.8s;
-}
-.follow-button a:nth-of-type(2) {
-	transition-delay: 0.6s;
-}
-.follow-button a:nth-of-type(3) {
-	transition-delay: 0.4s;
-}
-.follow-button a:nth-of-type(4) {
-	transition-delay: 0.2s;
 }
 
-.follow-btn {
-	background-color: #e50202;
-	width: 220px;
-	height: 50px;
-	border-radius: 30px;
-	border: none;
-	font-size: 15px;
-	font-weight: 100;
-	color: #fff;
-	text-align: center;
-	padding: 0px;
-	position: relative;
-	cursor: pointer;
-	transition: all .2s;
-}
-   
-.follow-btn:hover {
-	box-shadow: 0px 0px 60px -17px rgba(51,51,51,1);
-}
-
-.follow-btn:after {
-	font-size: 12px;
-	font-weight: bold;
-	text-transform: uppercase;
-	position: absolute;
-	right: 35px;
-	top: 18px;
-}
-   
-.slider .follow-btn:focus {
-	outline: none;
-}
   /* Animations */
 .slider h2 {
 	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
@@ -281,19 +228,17 @@ nav {
 	right: 100px;
 	font-weight: bold;
 }
-
 .number-pagination span {
 	font-size: 50px;
 	color: white;
 	letter-spacing: 4px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
 .number-pagination span:after {
 	font-size: 16px;
 	color: #fff;
 }
-  /* Slider Pagger */
+  /* Slider Pager */
 .slider-pagination {
 	position: absolute;
 	bottom: 30px;
@@ -364,11 +309,10 @@ nav {
 
 .ui.grid>.ui.stackable.three.column.centered.row {
 	background-color: black;
-	/* height: 500px; */
-	height: 70vh;
 }
 .ui.grid>.ui.stackable.three.column.centered.row>.column {
-	margin-top: 40px;
+	height: 400px;
+	width: auto;
 }
 .ui.grid>.ui.stackable.three.column.centered.row>.column:hover>a>.overlay {
 	position: absolute;
@@ -377,36 +321,37 @@ nav {
 	height: 100%;
 	left: 0;
 	background-color:#000;
-	opacity: 0.5;
-	z-index: 100;
+	opacity: 0.7;
+	z-index: 19;
 	display: block;
 }
 .info {
 	color: white;
 	font-size: 25px;
-	/* font-family: "Georgia Pro", serif; */
+	top: 50%;
+	left: 5%;
   display: none;
   position: absolute;
-	letter-spacing: 3px;
 	z-index: 101;
-	
 	text-transform: uppercase;
 }
-
 .img1 {
-	height: 400px;
+	height: 100%;
+	/* width: 425px; */
 	background-size: cover;
  	background-repeat: no-repeat;
 	background-image: url("../images/teeshirt.jpg");
 }
 .img2 {
-	height: 400px;
+	height: 100%;
+	/* width: 425px; */
 	background-size: cover;
  	background-repeat: no-repeat;
 	background-image: url("../images/sweatshirt.jpg");
 }
 .img3 {
-	height: 400px;
+	height: 100%;
+	/* width: 425px; */
 	background-size: cover;
  	background-repeat: no-repeat;
 	background-image: url("../images/teeshirt.jpg");
@@ -437,13 +382,14 @@ nav {
 .ui.equal.width.center.aligned.padded.grid.split>.row>.column:first-of-type {
 	height: 500px;
 	background-color: black;
-	
 }
 .ui.equal.width.center.aligned.padded.grid.split>.row>.column:first-of-type>.followLogo {
-	width: 350px;
-	height: 150px;
-	margin-top: 175px;
-	margin-left: 185px;
+	display: block;
+	margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+	width: 50%;
+	height: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("../images/winTodayLogo.jpg");
@@ -471,15 +417,58 @@ nav {
 	.social {
 		width: 15%;
 	}
+	.ui.equal.width.center.aligned.padded.grid.split>.row>.column:first-of-type {
+		display: none;
+	}
+	.ui.equal.width.center.aligned.padded.grid.split>.row>.column:nth-of-type(2) {
+		height: 425px;
+	}
+	.follow-button {
+
+	}
+	.follow-button span {
+		display: none;
+	}
+}
+@media screen and (min-width: 972px) {
+	.follow-button {
+		transition: .2s linear;
+	}
+	.follow-button:hover {
+		transform: scale(1.1);
+	}
+	.follow-button span {
+		transition: .2s linear;
+	}
+	.follow-button:hover span {
+		transform: translateX(-100%);
+		transition-delay: .3s;
+	}
+	.follow-button a {
+		transform: translateX(-100%);
+		transition: .2s linear;
+	}
+	.follow-button:hover a {
+		transform: translateX(0);
+	}
+	.follow-button a:nth-of-type(1) {
+		transition-delay: 0.6s;
+	}
+	.follow-button a:nth-of-type(2) {
+		transition-delay: 0.4s;
+	}
+	.follow-button a:nth-of-type(3) {
+		transition-delay: 0.2s;
+	}
+	.follow-button a:nth-of-type(4) {
+		transition-delay: 0s;
+	}
 }
 @media screen and (max-width: 882px) {
 	.social {
 		margin-right: 25px;
 	}
 }
-/* @media screen and (max-width: 811px) {
-
-} */
 @media screen and (max-width: 811px) {
 	.navbar {
 		position: absolute;
@@ -512,8 +501,7 @@ nav {
 		display: block;
 	}
 	.social {
-		width: 150px;
-		justify-content: center;
+		display: none;
 	}
 }
 @media screen and (min-width: 811px) {
@@ -528,28 +516,23 @@ nav {
 	.slider h4 {
 	  font-size: 16px;
 	}
-   
 	.slider-content {
 	  padding: 0 2%
 	}
-   
 	.number-pagination {
 	  right: 2%;
 	}
 	.slider-pagination {
 	  left: 2%;
 	}
-   
 	.slider .follow-btn {
 	  padding: 0 15px;
 	  width: 175px;
 	  height: 42px;
 	}
-   
 	.slider .follow-btn:after {
 	  top: 15px;
 	}
-
 	.passion {
 		font-size: 25px;
 		letter-spacing: 10px;
